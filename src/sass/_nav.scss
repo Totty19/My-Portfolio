@@ -4,12 +4,18 @@ nav {
     justify-content: start;
     align-items: end;
     margin: 25px;
+    margin-left: 100px;
+    align-items: flex-start;
+    align-content: flex-start;
     h1{
         border-bottom: solid 1px black;
         font-size: 38px;
+        text-align: start;
     }
     img {
-        width: 120px;
+        margin-left: 700px;
+        width: 350px;   
+        height: 350px;
         border-radius: 50%;
     }
 }

@@ -17,7 +17,7 @@ header {
         animation-name: img2;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
-        animation-duration: 8s;
+        animation-duration: 10s;
     }
     h2{
         width: 100%;
@@ -37,13 +37,16 @@ header {
     0% {
         translate: (100px);
     }
-    25%{
+    20%{
         transform: translatey(50px);
     }
-    50% {
+    40% {
         transform: translatex(150px);
     }
-    75%{
+    60% {
+        transform: translatex(-150px);
+    }
+    80%{
         transform: translatey(-50px);
     }
     100% {
