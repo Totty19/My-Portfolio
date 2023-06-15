@@ -1,0 +1,119 @@
+.fott {
+    background: linear-gradient(to top, rgb(98, 98, 100), transparent);
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    grid-area: footer;
+    padding: 15px;
+    font-size: 18px;
+    flex-direction: column;
+    gap: 15px;
+    > .fa-brands {
+        display: inline-block;
+        color: black;
+        font-size: 18px;
+        padding: 10px;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        padding: 15px; 
+        transition: all 0.6s;
+        &:hover {
+            border-bottom: solid black;
+            padding: 18px;
+        } 
+    }
+    .btnComien {
+        margin: 0;
+    }
+    .redesCaj {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 15px;
+        margin: 10px;
+        > i > a , > .btnComien {
+            color: black;
+            list-style-type: none;
+            text-decoration: none;
+        }
+    }
+    .contac{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        width: 60%;
+        gap: 15px;
+        .cajaCont{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 25px;
+            align-items: center;
+            > input {
+                padding: 2px;
+                font-size: 22px;    
+            }
+            .lbl {
+                width: 100%;
+                margin-top: 15px;
+                > input {
+                    text-align: center;
+                    width: 100%;
+                    padding: 15px;
+                    font-size: 20px;
+                    border-radius: 15px;
+                    background: transparent;
+                    color: white;
+                    border: none;
+                    transition: all 0.6s;
+                    border-bottom: white solid 2px;
+                    &:hover {
+                        background: #1514146f;
+                    }
+                }
+            }
+            .text{
+                text-align: center;
+                margin: 15px;
+                width: 100%;
+                padding: 15px;
+                height: 200px;
+                font-size: 20px;
+                border-radius: 15px;
+                background: transparent;
+                color: black;
+                border: none;
+                transition: all 0.6s;
+                resize: none;
+                border-bottom: white solid 2px;
+            }
+            .text:hover {
+                color: white;
+                background: #1514146f;
+            }
+            .btnCont{
+                text-align: center;
+                padding: 15px;
+                font-size: 20px;
+                border-radius: 15px;
+                background: transparent;
+                color: black;
+                border: none;
+                transition: all 0.6s;
+                border-bottom: white solid 2px;
+                &:hover{
+                    transform: scale(1.1);
+                    background: #1514146f;
+                }
+            }
+        }
+    }
+    > h2 {
+        font-size: 32px;
+    }
+}

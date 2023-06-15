@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "nav    nav     nav     nav"                  
+    "header header  header  header"                  
+    "main   main    main    main"                  
+    "footer footer  footer  footer";
+    background: rgb(12,12,15);
+    background:linear-gradient(to right, rgb(121, 119, 113), rgb(255, 255, 255) );
+}

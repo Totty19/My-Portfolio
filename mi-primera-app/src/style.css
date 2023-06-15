@@ -1,0 +1,322 @@
+main {
+  grid-area: main;
+}
+main .imgPc {
+  width: 450px;
+  height: 400px;
+  position: absolute;
+  display: flex;
+  border-radius: 50%;
+  z-index: -10;
+  right: 200px;
+  bottom: 0px;
+  animation-name: imgPc;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+main .estudios {
+  display: flex;
+  justify-content: flex-start;
+  width: 600px;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 10px;
+}
+main .estudios h2 {
+  align-items: flex-start;
+  width: 100%;
+  font-size: 36px;
+  border-bottom: solid 2px black;
+}
+main .estudios h3 {
+  width: 100%;
+  font-size: 22px;
+  padding-left: 15px;
+  text-align: center;
+}
+main .tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+}
+main .tarjetas .tarjeta {
+  margin: 6px;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+main .tarjetas .tarjeta h3 {
+  font-size: 25px;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #fff;
+}
+main .tarjetas .tarjeta a {
+  transition: all 0.6s;
+}
+main .tarjetas .tarjeta a img {
+  margin-top: 50px;
+  width: 55%;
+}
+main .tarjetas .tarjeta a:hover {
+  transform: scale(1.1);
+  transition: all 0.6s;
+}
+main h2 {
+  width: 100%;
+  text-align: center;
+  padding: 6px;
+  color: black;
+  font-size: 25px;
+  overflow-x: hidden;
+  margin: 20px;
+}
+main h2 i {
+  width: 100%;
+  bottom: 60px;
+  left: 0;
+  position: absolute;
+  animation-name: proyectos;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+
+.imgTarj {
+  width: 70%;
+  border: none;
+}
+
+@keyframes proyectos {
+  0% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(70px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+@keyframes imgPc {
+  0% {
+    translate: 100px;
+  }
+  50% {
+    transform: translateY(70px);
+  }
+  100% {
+    translate: 100px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  margin: 25px;
+}
+nav h1 {
+  border-bottom: solid 1px black;
+  font-size: 38px;
+}
+nav img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+header {
+  text-align: end;
+  font-size: 22px;
+  display: flex;
+  justify-content: end;
+  grid-area: header;
+  flex-wrap: wrap;
+}
+header .imgHead {
+  width: 450px;
+  height: 400px;
+  position: absolute;
+  display: flex;
+  border-radius: 50%;
+  z-index: -10;
+  left: 200px;
+  top: 80px;
+  animation-name: img2;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 8s;
+}
+header h2 {
+  width: 100%;
+  padding: 15px;
+  margin-right: 55px;
+}
+header .cajText {
+  border-top: solid 2px black;
+  width: 600px;
+  margin-right: 20px;
+  display: flex;
+  text-align: center;
+}
+
+@keyframes img2 {
+  0% {
+    translate: 100px;
+  }
+  25% {
+    transform: translatey(50px);
+  }
+  50% {
+    transform: translatex(150px);
+  }
+  75% {
+    transform: translatey(-50px);
+  }
+  100% {
+    translate: 100px;
+  }
+}
+.fott {
+  background: linear-gradient(to top, rgb(98, 98, 100), transparent);
+  color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  grid-area: footer;
+  padding: 15px;
+  font-size: 18px;
+  flex-direction: column;
+  gap: 15px;
+}
+.fott > .fa-brands {
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+}
+.fott a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  transition: all 0.6s;
+}
+.fott a:hover {
+  border-bottom: solid black;
+  padding: 18px;
+}
+.fott .btnComien {
+  margin: 0;
+}
+.fott .redesCaj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 15px;
+  margin: 10px;
+}
+.fott .redesCaj > i > a, .fott .redesCaj > .btnComien {
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+}
+.fott .contac {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  width: 60%;
+  gap: 15px;
+}
+.fott .contac .cajaCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+.fott .contac .cajaCont > input {
+  padding: 2px;
+  font-size: 22px;
+}
+.fott .contac .cajaCont .lbl {
+  width: 100%;
+  margin-top: 15px;
+}
+.fott .contac .cajaCont .lbl > input {
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  background: transparent;
+  color: white;
+  border: none;
+  transition: all 0.6s;
+  border-bottom: white solid 2px;
+}
+.fott .contac .cajaCont .lbl > input:hover {
+  background: rgba(21, 20, 20, 0.4352941176);
+}
+.fott .contac .cajaCont .text {
+  text-align: center;
+  margin: 15px;
+  width: 100%;
+  padding: 15px;
+  height: 200px;
+  font-size: 20px;
+  border-radius: 15px;
+  background: transparent;
+  color: black;
+  border: none;
+  transition: all 0.6s;
+  resize: none;
+  border-bottom: white solid 2px;
+}
+.fott .contac .cajaCont .text:hover {
+  color: white;
+  background: rgba(21, 20, 20, 0.4352941176);
+}
+.fott .contac .cajaCont .btnCont {
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  background: transparent;
+  color: black;
+  border: none;
+  transition: all 0.6s;
+  border-bottom: white solid 2px;
+}
+.fott .contac .cajaCont .btnCont:hover {
+  transform: scale(1.1);
+  background: rgba(21, 20, 20, 0.4352941176);
+}
+.fott > h2 {
+  font-size: 32px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav    nav     nav     nav" "header header  header  header" "main   main    main    main" "footer footer  footer  footer";
+  background: rgb(12, 12, 15);
+  background: linear-gradient(to right, rgb(121, 119, 113), rgb(255, 255, 255));
+}
